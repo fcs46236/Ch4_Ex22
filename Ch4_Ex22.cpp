@@ -31,7 +31,7 @@ int main()
     cin >> gigabytes_used;
 
     if (gigabytes_used < 0)
-        cout << "The number of gigabytes you used must be a non-negative number.  Please rerun the program with a valid number of gigabytes used." << endl;
+        cout << "The number of gigabytes you used must be a non-negative number.  Please run the program again with a valid number of gigabytes used." << endl;
     else
     {
 
