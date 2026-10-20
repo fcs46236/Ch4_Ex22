@@ -31,7 +31,7 @@ int main()
     cin >> gigabytes_used;
 
     if (gigabytes_used < 0)
-        cout << "The number of gigabytes you used must be a non-negative number." << endl;
+        cout << "The number of gigabytes you used must be a non-negative number.  Please rerun the program with a valid number of gigabytes used." << endl;
     else
     {
 
@@ -46,10 +46,10 @@ int main()
             cout << first_name << " " << last_name << "  Your Plan A monthly bill for using " << gigabytes_used << " gigabytes is $" << monthly_bill << endl;
 
             if (what_if_plan_B_cost < monthly_bill)
-                cout << "You could have saved $" << monthly_bill - what_if_plan_B_cost << " by switching to plan B." << endl;
+                cout << "You would have saved $" << monthly_bill - what_if_plan_B_cost << " if you were in plan B." << endl;
 
             if (plan_C_monthly_cost < monthly_bill)
-                cout << "You could have saved $" << monthly_bill - plan_C_monthly_cost << " by switching to plan C." << endl;
+                cout << "You would have saved $" << monthly_bill - plan_C_monthly_cost << " if you were in plan C." << endl;
             break;
 
         case 'b':
@@ -58,7 +58,7 @@ int main()
             cout << first_name << " " << last_name << "  Your Plan B monthly bill for using " << gigabytes_used << " gigabytes is $" << monthly_bill << endl;
 
             if (plan_C_monthly_cost < monthly_bill)
-                cout << "You could have saved $" << monthly_bill - plan_C_monthly_cost << " by switching to plan C." << endl;
+                cout << "You would have saved $" << monthly_bill - plan_C_monthly_cost << " if you were in plan C." << endl;
             break;
 
         case 'c':
@@ -68,7 +68,7 @@ int main()
             break;
 
         default:
-            cout << "Your choice of mobile phone plan must be A, B or C. Please rerun the program with a valid phone plan choice" << endl;
+            cout << "Your choice of mobile phone plan must be A, B or C. Please rerun the program with a valid phone plan choice." << endl;
         }
     }
 
